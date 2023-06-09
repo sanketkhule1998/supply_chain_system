@@ -1,1 +1,4 @@
-
+.pycache
+.csv
+__pycache__
+.archive(8)
