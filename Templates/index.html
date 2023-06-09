@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain for Big Data Analysis</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-image: url("https://www.leansupplysolutions.com/wp-content/uploads/2019/08/iStock-937818542.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 120%;
+        }
+    </style>
+        </head>
+
+    <h1>Supply Chain for Big Data Analysis</h1>
+
+    <form method = "GET" action = "/predict_sale">
+
+
+        <label>Type:</label>
+        <select name = "Type">
+
+            <option value = "DEBIT">DEBIT</option>
+            <option value = "TRANSFER">TRANSFER</option>
+            <option value = "CASH">CASH</option>
+            <option value = "PAYMENT">PAYMENT</option>
+            
+            
+        </select>
+
+        <br>
+
+        <label>Days_for_shipping_real:</label>
+        <select name = "Days_for_shipping_real">
+
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+            <option value = "6">6</option>
+            
+            
+        </select>
+
+        <br>
+
+        <label>Days_for_shipment_scheduled:</label>
+        <select name = "Days_for_shipment_scheduled">
+
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "4">4</option>
+            
+        </select>
+
+        <br>
+        
+        
+        <label>Benefit_per_order:</label>
+        <input type = "text" name ="Benefit_per_order">
+        </select>
+
+        <br>
+
+        <label>Sales_per_customer:</label>
+        <input type = "text" name ="Sales_per_customer">
+        </select>
+
+        <br>
+
+
+
+        <label>Delivery_Status:</label>
+        <select name = "Delivery_Status">
+            
+
+            <option value = "Advance shipping">Advance shipping</option>
+            <option value = "Late delivery">Late delivery</option>
+            <option value = "Shipping on time">Shipping on time</option>
+            <option value = "Shipping canceled">Shipping canceled</option>
+            
+            
+        </select>
+
+        <br>
+    
+        
+        <label>Late_delivery_risk:</label>
+        <select name = "Late_delivery_risk">
+
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+
+        </select>
+
+        <br>
+
+        <label>Category_Id:</label>
+        <input type = "text" name ="Category_Id">
+        </select>
+
+        <br>
+
+        <label>Category_Name:</label>
+        <input type = "text" name ="Category_Name">
+        </select>
+
+        <br>
+
+        <label>Customer_City:</label>
+        <input type = "text" name ="Customer_City">
+        </select>
+
+        <br>
+
+        <label>Customer_Country:</label> 
+        <select name = "Customer_Country">
+
+            <option value = "Puerto Rico">Puerto Rico</option>
+            <option value = "EE. UU.">EE. UU.</option>
+            
+        </select>
+
+        <br>
+
+        <label>Customer_Fname:</label>
+        <input type = "text" name ="Customer_Fname">
+        </select>
+
+        <br>
+
+        <label>Customer_Id:</label>
+        <input type = "text" name ="Customer_Id">
+        </select>
+
+        <br>
+
+        <label>Customer_Lname:</label>
+        <input type = "text" name ="Customer_Lname">
+        </select>
+
+        <br>
+
+        <label>Customer_Segment:</label>
+        <select name = "Customer_Segment">
+
+            <option value = "Consumer">Consumer</option>
+            <option value = "Home Office">Home Office</option>
+            <option value = "Corporate">Corporate</option>
+            
+        </select>
+
+        <br>
+
+    
+        
+        <label>Customer_State:</label>
+        <input type = "text" name ="Customer_State">
+        </select>
+
+        <br>
+
+        <label>Customer_Street:</label>
+        <input type = "text" name ="Customer_Street">
+        </select>
+
+        <br>
+
+        <label>Customer_Zipcode:</label>
+        <input type = "text" name ="Customer_Zipcode">
+        </select>
+
+        <br>
+
+        <label>Department_Id:</label>
+        <input type = "text" name ="Department_Id">
+        </select>
+
+        <br>
+
+        <label>Department_Name:</label>
+        <input type = "text" name ="Department_Name">
+        </select>
+
+        <br>
+
+        <label>Latitude:</label>
+        <input type = "text" name ="Latitude">
+        </select>
+
+        <br>
+
+        <label>Longitude:</label>
+        <input type = "text" name ="Longitude">
+        </select>
+
+        <br>
+
+        
+
+        <label>Market:</label>
+        <select name = "Market">
+
+            <option value = "Pacific Asia">Pacific Asia</option>
+            <option value = "USCA">USCA</option>
+            <option value = "Africa">Africa</option>
+            <option value = "Europe">Europe</option>
+            <option value = "LATAM">LATAM</option>
+            
+            
+            
+        </select>
+
+        <br>
+
+        <label>Order_City:</label>
+        <input type = "text" name ="Order_City">
+        </select>
+
+        <br>
+
+        <label>Order_Country:</label>
+        <input type = "text" name ="Order_Country">
+        </select>
+
+        <br>
+    
+
+        
+        <label>Order_Customer_Id:</label>
+        <input type = "text" name ="Order_Customer_Id">
+        </select>
+
+        <br>
+        
+
+        <label>order_date_DateOrders:</label>
+        <input type = "text" name ="order_date_DateOrders">
+        </select>
+
+        <br>
+        
+
+        <label>Order_Id:</label>
+        <input type = "text" name ="Order_Id">
+        </select>
+
+        <br>
+        
+
+        <label>Order_Item_Cardprod_Id:</label>
+        <input type = "text" name ="Order_Item_Cardprod_Id">
+        </select>
+
+        <br>
+
+        <label>Order_Item_Discount:</label>
+        <input type = "text" name ="Order_Item_Discount">
+        </select>
+
+        <br>
+
+        <label>Order_Item_Discount_Rate:</label>
+        <input type = "text" name ="Order_Item_Discount_Rate">
+        </select>
+
+        <br>
+
+        <label>Order_Item_Id:</label>
+        <input type = "text" name ="Order_Item_Id">
+        </select>
+
+        <br>
+
+        <label>Order_Item_Product_Price:</label>
+        <input type = "text" name ="Order_Item_Product_Price">
+        </select>
+
+        <br>
+
+        <label>Order_Item_Profit_Ratio:</label>
+        <input type = "text" name ="Order_Item_Profit_Ratio">
+        </select>
+
+        <br>
+
+        
+        
+        
+
+        <label>Order_Item_Quantity:</label>
+        <select name = "Order_Item_Quantity">
+
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5</option>
+            
+        </select>
+
+        <br>
+
+        <label>Sales:</label>
+        <input type = "text" name ="Sales">
+        </select>
+
+        <br>
+        
+
+        
+        
+
+        <label>Order_Item_Total:</label>
+        <input type = "text" name ="Order_Item_Total">
+        </select>
+
+        <br>
+    
+
+        <label>Order_Profit_Per_Order:</label>
+        <input type = "text" name ="Order_Profit_Per_Order">
+        </select>
+
+        <br>
+    
+
+        <label>Order_State:</label>
+        <input type = "text" name ="Order_State">
+        </select>
+
+        <br>
+
+        <label>Order_Status:</label>
+        <select name = "Order_Status">
+            
+
+            <option value = "COMPLETE">COMPLETE</option>
+            <option value = "PENDING">PENDING</option>
+            <option value = "CLOSED">CLOSED</option>
+            <option value = "PENDING_PAYMENT">PENDING_PAYMENT</option>
+            <option value = "CANCELED">CANCELED</option>
+            <option value = "PROCESSING">PROCESSING</option>
+            <option value = "SUSPECTED_FRAUD">SUSPECTED_FRAUD</option>
+            <option value = "ON_HOLD">ON_HOLD</option>
+            <option value = "PAYMENT_REVIEW">PAYMENT_REVIEW</option>
+            
+
+        </select>
+
+        <br>
+    
+
+        <label>Product_Card_Id:</label>
+        <input type = "text" name ="Product_Card_Id">
+        </select>
+
+        <br>
+        
+
+        <label>Product_Category_Id:</label>
+        <input type = "text" name ="Product_Category_Id">
+        </select>
+
+        <br>
+    
+
+        <label>Product_Name:</label>
+        <input type = "text" name ="Product_Name">
+        </select>
+
+        <br>
+        
+
+        <label>Product_Price:</label>
+        <input type = "text" name ="Product_Price">
+        </select>
+
+        <br>
+
+        <label>Product_Status:</label>
+        <select name = "Product_Status">
+
+            <option value = "0">0</option>
+            <option value = "1">1</option>
+            
+            
+        </select>
+
+        <br>
+
+        <label>shipping_date_DateOrders:</label>
+        <input type = "text" name ="shipping_date_DateOrders">
+        </select>
+
+        <br>
+    
+
+         
+       
+      
+        <label>Shipping_Mode:</label>
+        <select name = "Shipping_Mode">
+
+            <option value = "Standard Class">Standard Class</option>
+            <option value = "First Class">First Class</option>
+            <option value = "Second Class">Second Class</option>
+            <option value = "Same Day">Same Day</option>
+            
+             
+        </select>
+
+        <br>
+        
+
+        
+    
+
+
+        <hr>
+        <input type = "submit" value = "SUBMIT">
+
+        <hr>
+
+        <p>Your Order Region is <b> {{ prediction }}.</b><p>  
+    </form>
+
+
+
+</body>
+</html>
+
+
+
